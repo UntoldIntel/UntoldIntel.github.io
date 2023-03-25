@@ -11,7 +11,7 @@ html{
 	font-weight: lighter;
 }
 #author-image{
-	width: 20%;
+	width: 15%;
 }
 .social{
 	margin: auto;
@@ -25,6 +25,11 @@ a{
 }
 a:hover{
 	text-decoration: underline;
+}
+@media(max-width: 1360px){
+	#author-image{
+		width: 13%;
+	}
 }
 @media(max-width: 830px){
 	.social{
@@ -50,7 +55,7 @@ a:hover{
 		font-size: 0.8em !important; 
 	}
 	#author-image{
-		width: 50%;
+		width: 40%;
 	}
 }
 @media(max-width: 310px){
