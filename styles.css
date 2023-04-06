@@ -1,85 +1,221 @@
-<!-- Website designed by Roly Morvern -->
-<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Untold Intelligence. Writing on Trauma and Mystical Relationship from the Notebooks of Anna Morvern">
-		<title>Untold Intelligence</title>
-		<link rel="icon" href="favicon.ico">
-		<link rel="stylesheet" href="./styles.css">
-		<script src="https://kit.fontawesome.com/e79f3f8958.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<div class="main">
-			<div class="home">
-				<div class="info">
-					<a href="https://www.troubador.co.uk/bookshop/autobiography/untold-intelligence/" target="_blank">
-						<img id="author-image" src="Author-book	.jpg" alt="Anna Morvern">
-					</a>
-					<p class="isbn"><small>ISBN: 9781803137445</small></p>
-				</div>
-			</div>
-			<div class="social-quote">
-				<div class="social">
-					<a id="youtube" class="social-link" href="https://www.youtube.com/channel/UCRT88podON638ivlOcIFlbw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-					<a id="whatsapp" class="social-link" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-					<a id="twitter" class="social-link" href="https://twitter.com/UntoldIntell" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-				</div>
-				<p class="text">Text JOIN to Whatsapp +353 085 268 5580 for book launch/further information</p>
-				<a href="https://www.troubador.co.uk/bookshop/autobiography/untold-intelligence/" target="_blank"><h3 class="buy-book">Buy the book</h3></a>
-				<div class="quote">
-					<q class="quote-txt">How can we listen to holes, how can we see them? William Blake had seen a tree full of angels, and the story goes that he only escaped a beating by his father for telling this “lie” because of his mother’s intervention. Sergei Pankejeff, Freud’s famous “Wolf Man”, who had seen terrible things, saw a tree, but inhabited by the wolves of his childhood. I have just tried to know that the tree was there, outside myself, but nonetheless within sight and touch. Besides seeing, for sure, that angels and much worse than angels were also there, evil beasts, in the holes.</q>
-				</div>
-				<!-- <p class="red"><small> Click on the red notebooks</small></p> -->
-			</div>
-			<div class="tiles-right">
-				<a class="diary-link">
-					<img src="Images/Diary-image-9.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="diary-link">
-					<img src="Images/Diary-image-15.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="diary-link">
-					<img src="Images/Diary-image-14.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="diary-link">
-					<img src="Images/Diary-image-1.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="diary-link">
-					<img src="Images/Diary-image-11.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-7.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-8.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-10.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-3.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-13.jpg" alt="Diary image" class="diary-link-img">
-				</a>			
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-2.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-5.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-6.jpg" alt="Diary image" class="diary-link-img">
-				</a>
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-4.jpg" alt="Diary image" class="diary-link-img">
-				</a>			
-				<a class="lower-diary-link">
-					<img src="Images/Diary-image-12.jpg" alt="Diary image" class="diary-link-img">
-				</a>			
-			</div>
-		</div>
-	</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html{
+	font-size: 1.20em;
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+    height: 99.35%;	 	
+	background: rgba(6, 172, 169, 1.0);
+	background: -webkit-linear-gradient(left, rgba(6, 172, 169, 1.0), rgba(26, 183, 78, 1.0));
+	background: -moz-linear-gradient(left, rgba(6, 172, 169, 1.0), rgba(26, 183, 78, 1.0));
+	background: linear-gradient(to right, rgba(6, 172, 169, 1.0), rgba(26, 183, 78, 1.0));
+}
+body{
+	height: 99.35%;
+	margin-right: 50px;
+}
+.main{
+	display: grid;
+	grid-template-areas: 
+		"home social"
+		"home tiles";
+}
+.tiles-right{
+	bottom: 5px;
+	position: fixed;
+	display: flex;
+	margin-left: 35.5%;
+}
+.diary-link-img{
+	width: 80%;
+}
+.home{
+	width: 100%;
+}
+.quote{
+	display: flex;
+	justify-content: justify;
+}
+.quote-txt{
+	text-align: justify;
+	font-size: 1.3em;
+}
+#paragraph{
+	font-weight: lighter;
+}
+#author-image{
+	width: 70%;
+	margin-top: 50px;
+}
+.isbn{
+	margin: 0px !important;
+}
+.social{
+	display: flex;
+	justify-content: flex-end;
+	width: 90%;
+	height: 5%;
+	margin-top: 10px;
+}
+.social a{
+	margin-left: 10px;
+	margin-right: 10px;
+	transition: 0.3s color;
+}
+#youtube:hover{
+	color: red;
+}
+#twitter:hover{
+	color: blue;
+}
+#whatsapp:hover{
+	color: #008000;
+}
+.text{
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: underline;
+}
+.buy-book{
+	margin: 50px auto !important;
+	padding: !important;
+	width: 30%;
+	background-color: white;
+	border-radius: 80px 80px 80px 80px;
+	border: 0px solid #000000;
+	transition: 0.5s background-color;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+}
+@media(max-width: 1650px){
+	.tiles-right{
+		bottom: 5px;
+		margin-left: 35%;
+	}
+	#author-image{
+		width: 54%;
+	}
+	.red{
+		padding-top: 50px;
+	}
+}
+@media(max-width: 1550px){
+	.tiles-right{
+		bottom: 5px;
+		margin-left: 37%;
+	}
+	#author-image{
+		width: 55%;
+	}
+	.red{
+		padding-top: 20px;
+	}
+}
+@media(max-width: 1300px){
+	#author-image{
+		width: 50%;
+	}
+	.red{
+		padding-top: 0px !important;
+	}
+	.buy-book{
+		margin: 20px auto !important;
+	}
+}
+@media(max-width: 1200px){
+	#author-image{
+		width: 50%;
+	}
+	.red{
+		padding-top: -10px !important;
+	}
+}
+@media(max-height: 620px){
+	.main{
+		grid-template-areas: 
+			"home"
+			"tiles";
+	}
+	.tiles-right{
+		position: static !important;
+		margin: 10px !important;
+		display: grid !important;
+	  	grid-template-areas: "img1 img2 img3 img4 img5 img6" !important;
+  		width: 100% !important;
+	}
+	#author-image{
+		width: 49%;
+	}
+	.social{
+		justify-content: space-evenly !important;
+	}
+}
+@media(max-width: 1111px){
+	.main{
+		grid-template-areas: 
+			"home"
+			"tiles";
+	}
+	.tiles-right{
+		position: static !important;
+		margin: 10px !important;
+		display: grid !important;
+	  	grid-template-areas: "img1 img2 img3 img4 img5 img6" !important;
+  		width: 100% !important;
+	}
+	#author-image{
+		width: 49%;
+	}
+	.social{
+		justify-content: space-evenly !important;
+	}
+}
+@media(max-width: 830px){
+	.social{
+		width: 100% !important;
+	}
+	#author-image{
+		width: 59% !important;
+	}
+}
+@media(max-width: 700px){
+	.diary-link{
+		width: 80%;
+	}
+	.diary-link-img{
+		width: 100%;
+	}
+}
+@media(max-width: 500px){
+	#author-image{
+		width: 89% !important;
+	}
+	.social{
+		height: 3%;
+	}
+	.buy-book{
+		width: 50% !important;
+	}
+}
+@media(max-width: 350px){
+	.heading{
+		font-size: 0.8em !important; 
+	}
+	#author-image{
+		width: 99% !important;
+	}
+}
+@media(max-width: 310px){
+	#author-image{
+		width: 89%;
+	}
+	.heading{
+		font-size: 0.5em !important;
+	}
+}
