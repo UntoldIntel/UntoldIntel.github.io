@@ -1,68 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
-html{
-	font-size: 1.20em;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-}
-#title{
-	font-size: 1.5em;
-}
-#paragraph{
-	font-weight: lighter;
-}
-#author-image{
-	width: 15%;
-}
-.social{
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	width: 70%;
-}
-a{
-	text-decoration: none;
-	color: black;
-}
-a:hover{
-	text-decoration: underline;
-}
-@media(max-width: 1360px){
-	#author-image{
-		width: 13%;
-	}
-}
-@media(max-width: 830px){
-	.social{
-		width: 100% !important;
-	}
-	#author-image{
-		width: 35% !important;
-	}
-}
-@media(max-width: 500px){
-	.social{
-		flex-direction: column;
-	}
-	.social-link{
-		padding-bottom: 0.5em !important;
-	}
-	#author-image{
-		width: 60% !important;
-	}
-}
-@media(max-width: 350px){
-	.heading{
-		font-size: 0.8em !important; 
-	}
-	#author-image{
-		width: 40%;
-	}
-}
-@media(max-width: 310px){
-	#author-image{
-		width: 60%;
-	}
-	.heading{
-		font-size: 0.5em !important;
-	}
-}
+<!-- Website designed by Roly Morvern -->
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Untold Intelligence. Writing on Trauma and Mystical Relationship from the Notebooks of Anna Morvern">
+		<title>Untold Intelligence</title>
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" href="./styles.css">
+		<script src="https://kit.fontawesome.com/e79f3f8958.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="home">
+				<div class="info">
+					<a href="https://www.troubador.co.uk/bookshop/autobiography/untold-intelligence/" target="_blank">
+						<img id="author-image" src="Author-book	.jpg" alt="Anna Morvern">
+					</a>
+					<p class="isbn"><small>ISBN: 9781803137445</small></p>
+				</div>
+			</div>
+			<div class="social-quote">
+				<div class="social">
+					<a id="youtube" class="social-link" href="https://www.youtube.com/channel/UCRT88podON638ivlOcIFlbw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+					<a id="whatsapp" class="social-link" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+					<a id="twitter" class="social-link" href="https://twitter.com/UntoldIntell" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				</div>
+				<p class="text">Text JOIN to Whatsapp +353 085 268 5580 for book launch/further information</p>
+				<a href="https://www.troubador.co.uk/bookshop/autobiography/untold-intelligence/" target="_blank"><h3 class="buy-book">Buy the book</h3></a>
+				<div class="quote">
+					<q class="quote-txt">How can we listen to holes, how can we see them? William Blake had seen a tree full of angels, and the story goes that he only escaped a beating by his father for telling this “lie” because of his mother’s intervention. Sergei Pankejeff, Freud’s famous “Wolf Man”, who had seen terrible things, saw a tree, but inhabited by the wolves of his childhood. I have just tried to know that the tree was there, outside myself, but nonetheless within sight and touch. Besides seeing, for sure, that angels and much worse than angels were also there, evil beasts, in the holes.</q>
+				</div>
+				<!-- <p class="red"><small> Click on the red notebooks</small></p> -->
+			</div>
+			<div class="tiles-right">
+				<a class="diary-link">
+					<img src="Images/Diary-image-9.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="diary-link">
+					<img src="Images/Diary-image-15.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="diary-link">
+					<img src="Images/Diary-image-14.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="diary-link">
+					<img src="Images/Diary-image-1.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="diary-link">
+					<img src="Images/Diary-image-11.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-7.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-8.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-10.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-3.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-13.jpg" alt="Diary image" class="diary-link-img">
+				</a>			
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-2.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-5.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-6.jpg" alt="Diary image" class="diary-link-img">
+				</a>
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-4.jpg" alt="Diary image" class="diary-link-img">
+				</a>			
+				<a class="lower-diary-link">
+					<img src="Images/Diary-image-12.jpg" alt="Diary image" class="diary-link-img">
+				</a>			
+			</div>
+		</div>
+	</body>
+</html>
