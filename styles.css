@@ -85,6 +85,8 @@ a:hover{
 .buy-book{
 	margin: 50px auto !important;
 	padding: !important;
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
 	width: 30%;
 	background-color: white;
 	border-radius: 80px 80px 80px 80px;
@@ -92,6 +94,10 @@ a:hover{
 	transition: 0.5s background-color;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
+}
+.amazon a{
+	color: blue;
+	text-decoration: underline;
 }
 .info{
 	width: 100%;
