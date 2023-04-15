@@ -102,6 +102,9 @@ a:hover{
 .info{
 	width: 100%;
 }
+.red-phone{
+	display: none;
+}
 @media(max-width: 1650px){
 	.tiles-right{
 		bottom: 5px;
@@ -123,18 +126,18 @@ a:hover{
 		width: 100%;
 	}
 	.red{
-		padding-top: 20px;
+		padding-top: 55px !important;
 	}
 }
 @media(max-width: 1300px){
 	#author-image{
 		width: 100%;
 	}
-	.red{
-		padding-top: 0px !important;
-	}
 	.buy-book{
 		margin: 20px auto !important;
+	}
+	.red{
+		padding-top: 100px !important;
 	}
 }
 @media(max-width: 1200px){
@@ -142,7 +145,7 @@ a:hover{
 		width: 70%;
 	}
 	.red{
-		padding-top: -10px !important;
+		padding-top: 250px !important;
 	}
 }
 @media(max-height: 620px){
@@ -163,6 +166,12 @@ a:hover{
 	}
 	.social{
 		justify-content: space-evenly !important;
+	}
+	.red{
+		display: none;
+	}
+	.red-phone{
+		display: block !important;
 	}
 }
 @media(max-width: 1111px){
@@ -190,6 +199,12 @@ a:hover{
 	}
 	.quote-txt{
 		font-size: 1em !important;
+	}
+	.red-phone{
+		display: block !important;
+	}
+	.red{
+		display: none;
 	}
 }
 @media(max-width: 830px){
