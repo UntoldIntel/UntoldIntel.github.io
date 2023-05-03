@@ -1,3 +1,4 @@
+/**{border:2px solid black}*/
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 html{
@@ -13,6 +14,7 @@ html{
 body{
 	height: 99.35%;
 	margin-right: 50px;
+	overflow: hidden;
 }
 .main{
 	display: grid;
@@ -83,22 +85,34 @@ a:hover{
 	text-decoration: underline;
 }
 .buy-book{
-	margin: 50px auto !important;
-	padding: !important;
-	padding-bottom: 0px !important;
-	margin-bottom: 0px !important;
+	margin: 50px auto;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 	width: 30%;
 	background-color: white;
 	border-radius: 80px 80px 80px 80px;
 	border: 0px solid #000000;
-	transition: 0.5s background-color;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
+}
+.join-whatsapp{
+	margin: 50px auto;
+	width: 40%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	background-color: white;
+	border-radius: 80px 80px 80px 80px;
+	border: 0px solid #000000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+}
+.join-whatsapp:hover{
+	text-decoration: underline;
 }
 .amazon a{
 	color: blue;
 	text-decoration: underline;
-}
+}	
 .info{
 	width: 100%;
 }
@@ -148,6 +162,20 @@ a:hover{
 		padding-top: 250px !important;
 	}
 }
+@media(max-width: 1234px) and (max-height: 689px){
+	.join-whatsapp{
+		width: 50% !important;
+	}
+}
+@media(max-width: 1266px){
+  .quote-txt{
+  	font-size: 1.17em;
+  }
+  .join-whatsapp {
+    position: absolute;
+    bottom: 90px;
+  }
+}
 @media(max-height: 620px){
 	.main{
 		grid-template-areas: 
@@ -173,8 +201,14 @@ a:hover{
 	.red-phone{
 		display: block !important;
 	}
+  .join-whatsapp {
+        position: static;
+	}
 }
 @media(max-width: 1111px){
+  .join-whatsapp {
+        position: static;
+	}
 	.main{
 		grid-template-areas: 
 			"home"
