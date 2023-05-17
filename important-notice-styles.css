@@ -1,0 +1,12 @@
+*{
+	text-align: justify;
+}
+.notice{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+@media(max-width: 900px){
+	*{
+		text-align: left !important;
+	}
+}
