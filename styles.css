@@ -321,6 +321,9 @@ a:hover{
 		width: calc(560px / 3);
 		height: calc(315px / 3);
 	}
+	.ts {
+		font-size: 1.2em;	
+	}
 }
 @media(max-width: 310px){
 	#author-image{
